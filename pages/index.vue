@@ -1,6 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Header from '../components/organisms/header/index.vue'
+import Slider from '../components/organisms/slider/index.vue'
+</script>
 <template>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-  </h1>
+  <div>
+    <Header />
+    <Slider />
+  </div>
 </template>
