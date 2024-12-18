@@ -46,7 +46,7 @@ const prevSlide = () => {
 </script>
 
 <template>
-    <div class="slider">
+    <div class="slider mt-8">
         <div v-for="(item, index) in items" :key="index" class="item" :style="getItemStyle(index)">
             <h1 class="font-black">{{ item.title }}</h1>
             <p class="font-black">{{ item.content }}</p>
@@ -59,7 +59,6 @@ const prevSlide = () => {
 <style scoped>
 .slider {
     position: relative;
-    margin-top: 100px;
     width: 100%;
     height: 370px;
     overflow: hidden;

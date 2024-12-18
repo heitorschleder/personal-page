@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import Header from '../components/organisms/header/index.vue'
 import Slider from '../components/organisms/slider/index.vue'
+import Title from '../components/atoms/title/index.vue'
 </script>
 <template>
   <div>
     <Header />
+    <Title class="mt-20" :title="'Projects'" />
     <Slider />
   </div>
 </template>
