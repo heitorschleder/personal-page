@@ -57,6 +57,7 @@ const prevSlide = () => {
 </template>
 
 <style scoped>
+
 .slider {
     position: relative;
     width: 100%;
@@ -79,13 +80,13 @@ const prevSlide = () => {
 
 #next {
     position: absolute;
-    right: 50px;
+    right: 10rem;
     top: 40%;
 }
 
 #prev {
     position: absolute;
-    left: 50px;
+    left: 10rem;
     top: 40%;
 }
 

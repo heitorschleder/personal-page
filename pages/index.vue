@@ -8,5 +8,8 @@ import Title from '../components/atoms/title/index.vue'
     <Header />
     <Title class="mt-20" :title="'Projects'" />
     <Slider />
+    <Title class="mt-20" :title="'Skills'" />
+    <Title class="mt-20" :title="'Certified'" />
+    <Title class="mt-20" :title="'Hobbies'" />
   </div>
 </template>
