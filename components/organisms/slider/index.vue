@@ -3,19 +3,21 @@ import { ref } from 'vue';
 
 const items = ref([
     {
-        title: 'To-Do List',
-        content: 'a to-do-list made with vue2 and vuex, the name already says what this projects do',
-        image: '',
+        thumb: 'https://kronus.kebook.com.br/assets/f6185048-b91c-438e-810f-6ad0ac94e06c.png&quot;',
+        projectTitle: 'Teste1',
+        projectDesc: 'desced as das dasd adas dadasda asdasd adasdadads',
         skills: ''
     },
     {
-        title: 'Pokedex', content: 'a totally useless project made for practicing',
-        image: '',
+        thumb: 'https://kronus.kebook.com.br/assets/f6185048-b91c-438e-810f-6ad0ac94e06c.png&quot;',
+        projectTitle: 'Teste2',
+        projectDesc: 'desced as das dasd adas dadasda asdasd adasdadads',
         skills: ''
     },
     {
-        title: 'Python', content: 'a fast project made with python',
-        image: '',
+        thumb: 'https://kronus.kebook.com.br/assets/f6185048-b91c-438e-810f-6ad0ac94e06c.png&quot;',
+        projectTitle: 'Teste3',
+        projectDesc: 'desced as das dasd adas dadasda asdasd adasdadads',
         skills: ''
     },
 ]);
@@ -46,10 +48,13 @@ const prevSlide = () => {
 </script>
 
 <template>
-    <div class="slider mt-8">
+    <div class="slider mt-8 z-10">
         <div v-for="(item, index) in items" :key="index" class="item" :style="getItemStyle(index)">
-            <h1 class="font-black">{{ item.title }}</h1>
-            <p class="font-black">{{ item.content }}</p>
+            <img :src="item.thumb" alt="thumb" class='thumb rounded-t-lg h-32'>
+            <div class="text-white text-center mt-3">
+                <h1 class="font-black">{{ item.projectTitle }}</h1>
+                <p class="font-black">{{ item.projectDesc }}</p>
+            </div>
         </div>
         <button id="next" @click="nextSlide">> </button>
         <button id="prev" @click="prevSlide">< </button>
@@ -57,7 +62,9 @@ const prevSlide = () => {
 </template>
 
 <style scoped>
-
+.thumb {
+    border-radius: ;
+}
 .slider {
     position: relative;
     width: 100%;
@@ -67,14 +74,14 @@ const prevSlide = () => {
 
 .item {
     position: absolute;
-    width: 200px;
-    height: 320px;
+    width: 350px;
+    height: 280px;
     text-align: justify;
-    background-color: #fff;
+    background-color: #1a1919ce;
     border-radius: 10px;
     padding: 20px;
     transition: 0.5s;
-    left: calc(50% - 110px);
+    left: calc(50% - 150px);
     top: 0;
 }
 

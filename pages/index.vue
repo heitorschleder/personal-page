@@ -4,7 +4,7 @@ import Slider from '../components/organisms/slider/index.vue'
 import Title from '../components/atoms/title/index.vue'
 </script>
 <template>
-  <div>
+  <div class="content-manager -z-10">
     <Header />
     <Title class="mt-20" :title="'Projects'" />
     <Slider />
@@ -13,3 +13,8 @@ import Title from '../components/atoms/title/index.vue'
     <Title class="mt-20" :title="'Hobbies'" />
   </div>
 </template>
+<style scoped>
+.content-manager {
+  background-image: url(../assets/images/background.jpeg);
+}
+</style>
