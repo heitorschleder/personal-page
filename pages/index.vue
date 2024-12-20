@@ -2,6 +2,7 @@
 import Header from '../components/organisms/header/index.vue'
 import Slider from '../components/organisms/slider/index.vue'
 import Title from '../components/atoms/title/index.vue'
+import Skills from '../components/organisms/skills/index.vue'
 </script>
 <template>
   <div class="content-manager -z-10">
@@ -9,6 +10,7 @@ import Title from '../components/atoms/title/index.vue'
     <Title class="mt-20" :title="'Projects'" />
     <Slider />
     <Title class="mt-20" :title="'Skills'" />
+    <Skills />
     <Title class="mt-20" :title="'Certified'" />
     <Title class="mt-20" :title="'Hobbies'" />
   </div>
