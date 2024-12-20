@@ -104,16 +104,17 @@ const skills = [{
 }]
 </script>
 <template>
-    <section class="overflow-y-auto h-64 w-64 flex flex-col justify-self-center text-center">
-        <div v-for="skill in skills" :key="skill.id" class="">
-            <div class="flex justify-around items-center mb-5">
+    <section class="overflow-hidden h-64 w-80 flex flex-col justify-self-center text-center">
+    <div class="overflow-y-auto h-full">
+        <div v-for="skill in skills" :key="skill.id">
+            <div class="flex justify-around items-center mb-5 m-3">
                 <i :class="`ti text-7xl ti-${skill.skillImg}`"></i>
                 <h2 class="w-44">{{ skill.skillName }}</h2>
                 <div class="border border-yellow-600 h-6 w-20 p-[1px]">
-                <div class="bg-yellow-300 h-full" :style="`width: ${skill.skillWidth}%`"></div>
+                    <div class="bg-yellow-300 h-full" :style="`width: ${skill.skillWidth}%`"></div>
                 </div>
             </div>
-            
         </div>
-    </section>
+    </div>
+</section>
 </template>
