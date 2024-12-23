@@ -11,8 +11,18 @@
   },
   "dependencies": {
     "@nuxt/ui": "^2.20.0",
+    "@radix-icons/vue": "^1.0.0",
     "@tabler/icons-vue": "^3.26.0",
+    "@vueuse/core": "^12.0.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "embla-carousel-autoplay": "^8.5.1",
+    "embla-carousel-vue": "^8.5.1",
     "nuxt": "^3.14.1592",
+    "radix-vue": "^1.9.11",
+    "shadcn-nuxt": "^0.11.3",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
     "vue": "latest",
     "vue-router": "latest"
   },
