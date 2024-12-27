@@ -111,8 +111,8 @@ const toggleMoreInfo = (index) => {
         <div v-for="(item, index) in items" :key="index" class="item h-auto" :style="getItemStyle(index)">
             <a :href="item.repository" class="relative group">
                 <nuxt-img :src="item.thumb" :alt="item.projectTitle" class='thumb rounded-t-lg h-32 transition-opacity duration-300 group-hover:opacity-0' />
-                <nuxt-img src="~/assets/images/wanna-check.png" alt="wannacheck"
-                    class="img-github rounded-t-lg absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <img src="~/assets/images/wanna-check.png" alt="wannacheck"
+                    class="img-github rounded-t-lg absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             </a>
             <div class="flex flex-col items-center text-white mt-3">
                 <div class="mb-2">

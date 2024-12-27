@@ -7,7 +7,6 @@ useHead({
     { name: "author", content: "Heitor Schleder" },
     { property: "og:title", content: "Heitor Schleder" },
     { property: "og:description", content: "Desenvolvedor full-stack." },
-    { property: "og:image", content: "@/assets/images/share.png" },
     { property: "og:type", content: "website" }
   ],
   link: [
