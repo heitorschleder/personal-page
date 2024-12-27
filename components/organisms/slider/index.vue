@@ -4,7 +4,7 @@ import { ref } from 'vue';
 const items = ref([
     {
         repository: 'https://github.com/heitorschleder/to-do-list',
-        thumb: 'http://localhost:3000/_nuxt/assets/images/project-todo.png',
+        thumb: '/assets/images/project-todo.png',
         projectTitle: 'To-Do List',
         projectDesc: 'A to-do list made with Vue2 and Vuex, the name already says what this project does',
         additionalInfo: [{
