@@ -24,7 +24,7 @@ const socials = [
 </script>
 <template>
     <footer class="flex items-center justify-center bg-yellow-500 font-black text-black h-32">
-        <h3 class="mr-4 text-1xl sm:text-3xl">Follow Me:</h3>
+        <span class="mr-4 text-1xl sm:text-3xl">Follow Me:</span>
         <section id="socials" class="flex">
             <div v-for="social in socials" :key="social.id" class="mx-2 hover:scale-105 duration-200">
                 <a :href="social.socialLink">
