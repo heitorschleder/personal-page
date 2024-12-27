@@ -46,7 +46,7 @@ const closeModal = () => {
                 <CarouselItem class="basis-1/3" v-for="certfies in degrees" :key="certfies.id">
                     <button @click="openModal(certfies.photo)">
                         <div class="h-72 w-72 sm:w-96">
-                            <img :src="certfies.photo" alt="certified">
+                            <nuxt-img :src="certfies.photo" alt="certified" />
                         </div>
                     </button>
                 </CarouselItem>
@@ -55,7 +55,7 @@ const closeModal = () => {
         <div v-if="showModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
             <div class="bg-white p-4 rounded">
                 <button @click="closeModal" class="absolute top-2 right-2"><i class="text-5xl ti ti-xbox-x"></i></button>
-                <img :src="selectedPhoto" alt="certified" class="max-w-full max-h-[80vh]">
+                <nuxt-img :src="selectedPhoto" alt="certified" class="max-w-full max-h-[80vh]"/>
             </div>
         </div>
     </section>

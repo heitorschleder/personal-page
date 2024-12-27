@@ -110,8 +110,7 @@ const toggleMoreInfo = (index) => {
     <div class="slider mt-8 z-10">
         <div v-for="(item, index) in items" :key="index" class="item h-auto" :style="getItemStyle(index)">
             <a :href="item.repository" class="relative group">
-                <img :src="item.thumb" alt="thumb"
-                    class='thumb rounded-t-lg h-32 transition-opacity duration-300 group-hover:opacity-0'>
+                <nuxt-img :src="item.thumb" :alt="item.projectTitle" class='thumb rounded-t-lg h-32 transition-opacity duration-300 group-hover:opacity-0' />
                 <img src="~/assets/images/wanna-check.png" alt="wannacheck"
                     class="img-github rounded-t-lg absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             </a>
@@ -128,11 +127,10 @@ const toggleMoreInfo = (index) => {
                         </div>
                     </div>
                 </div>
-                <button
+                <button id="buttonMoreInfo"
                     class="mt-2 rounded-b-lg bg-[#FFCD29] w-full h-6 inset-x-0 bottom-0 hover:bg-[#CEAF30] hover:delay-75"
                     @click="toggleMoreInfo(index)">
-                    <i
-                        :class="['text-black text-xl ti', item.showMore ? 'ti-chevron-compact-up' : 'ti-chevron-compact-down']"></i>
+                    <i :class="['text-black text-xl ti', item.showMore ? 'ti-chevron-compact-up' : 'ti-chevron-compact-down']"></i>
                 </button>
             </div>
         </div>
