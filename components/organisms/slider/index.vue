@@ -178,16 +178,17 @@ const toggleMoreInfo = (index) => {
     top: 0;
 }
 
+
 #next {
     position: absolute;
     right: 10rem;
-    top: 40%;
+    top: 80%;
 }
 
 #prev {
     position: absolute;
     left: 10rem;
-    top: 40%;
+    top: 80%;
 }
 
 #prev,
@@ -206,4 +207,14 @@ const toggleMoreInfo = (index) => {
 #next:hover {
     opacity: 1;
 }
+
+@media (max-width: 440px) {
+    #next {
+        right: 5rem;
+    }
+    #prev {
+        left: 5rem;
+    }
+}
+
 </style>

@@ -45,7 +45,7 @@ const closeModal = () => {
             <CarouselContent class="h-[300px]">
                 <CarouselItem class="basis-1/3" v-for="certfies in degrees" :key="certfies.id">
                     <button @click="openModal(certfies.photo)">
-                        <div class="h-72 w-96">
+                        <div class="h-72 w-72 sm:w-96">
                             <img :src="certfies.photo" alt="certified">
                         </div>
                     </button>

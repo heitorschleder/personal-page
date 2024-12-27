@@ -4,6 +4,7 @@ import Slider from '../components/organisms/slider/index.vue'
 import Title from '../components/atoms/title/index.vue'
 import Skills from '../components/organisms/skills/index.vue'
 import Carousel from '../components/organisms/carouseltest/index.vue'
+import Footer from '../components/organisms/footer/index.vue'
 </script>
 <template>
   <div class="content-manager -z-10">
@@ -12,9 +13,9 @@ import Carousel from '../components/organisms/carouseltest/index.vue'
     <Slider />
     <Title class="mt-20" :title="'Skills'" />
     <Skills />
-    <Title class="mt-20" :title="'Certified'" />
+    <Title class="mt-40" :title="'Certified'" />
     <Carousel />
-    <Title class="mt-20" :title="'Hobbies'" />
+    <Footer class="mt-20" />
   </div>
 </template>
 <style scoped>
