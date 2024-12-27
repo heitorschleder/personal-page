@@ -3,24 +3,24 @@ import {
     Carousel,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
 } from '@/components/ui/carousel'
-
+import cert1Image from '@/assets/images/certificado-1.png'
+import cert2Image from '@/assets/images/certificado-2.png'
+import cert3Image from '@/assets/images/certificado-3.png'
 import Autoplay from 'embla-carousel-autoplay'
 import { ref } from 'vue'
 
 const degrees = [{
     id: 1,
-    photo: "http://localhost:3000/_nuxt/assets/images/certificado-1.png"
+    photo: cert1Image
 },
 {
     id: 2,
-    photo: "http://localhost:3000/_nuxt/assets/images/certificado-2.png"
+    photo: cert2Image
 },
 {
     id: 3,
-    photo: "http://localhost:3000/_nuxt/assets/images/certificado-3.png"
+    photo: cert3Image
 }]
 
 const showModal = ref(false)

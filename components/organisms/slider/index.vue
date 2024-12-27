@@ -1,10 +1,14 @@
 <script setup>
 import { ref } from 'vue';
+import todoImage from '@/assets/images/project-todo.png'
+import pokeImage from '@/assets/images/project-pokedex.png'
+import converterImage from '@/assets/images/project-converter.png'
+import webImage from '@/assets/images/project-first.png'
 
 const items = ref([
     {
         repository: 'https://github.com/heitorschleder/to-do-list',
-        thumb: '/assets/images/project-todo.png',
+        thumb: todoImage,
         projectTitle: 'To-Do List',
         projectDesc: 'A to-do list made with Vue2 and Vuex, the name already says what this project does',
         additionalInfo: [{
@@ -24,7 +28,7 @@ const items = ref([
     },
     {
         repository: 'https://github.com/heitorschleder/Pokedex',
-        thumb: 'http://localhost:3000/_nuxt/assets/images/project-pokedex.png',
+        thumb: pokeImage,
         projectTitle: 'Pokedex',
         projectDesc: 'A simple Pokedex application to view Pokemon details.',
         additionalInfo: [{
@@ -43,7 +47,7 @@ const items = ref([
     },
     {
         repository: 'https://github.com/heitorschleder/Conversor',
-        thumb: 'http://localhost:3000/_nuxt/assets/images/project-converter.png',
+        thumb: converterImage,
         projectTitle: 'Conversor',
         projectDesc: 'Desced as das dasd adas dadasda asdasd adasdadads',
         additionalInfo: [{
@@ -61,7 +65,7 @@ const items = ref([
         ], showMore: false
     },{
         repository: 'https://github.com/heitorschleder/portfolio',
-        thumb: 'http://localhost:3000/_nuxt/assets/images/project-first.png',
+        thumb: webImage,
         projectTitle: 'First Web Page',
         projectDesc: 'One of my first studies results with html (nostalgic)',
         additionalInfo: [{
