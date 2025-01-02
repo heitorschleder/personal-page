@@ -49,7 +49,7 @@ const items = ref([
         repository: 'https://github.com/heitorschleder/Conversor',
         thumb: converterImage,
         projectTitle: 'Conversor',
-        projectDesc: 'Desced as das dasd adas dadasda asdasd adasdadads',
+        projectDesc: 'project with API consumption for training',
         additionalInfo: [{
             skill: "vue",
             percentage: "74.6%"

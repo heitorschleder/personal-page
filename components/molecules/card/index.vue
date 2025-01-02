@@ -10,6 +10,6 @@ const avatarSrc = HeitorPic
     <section class="text-center">
         <Avatar :src="avatarSrc"/>
         <Title :title="'Heitor Schleder'"/>
-        <p>Dev</p>
+        <p>Dev Front-end</p>
     </section>
 </template> 
