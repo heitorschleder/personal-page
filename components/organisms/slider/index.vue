@@ -4,6 +4,9 @@ import todoImage from '@/assets/images/project-todo.png'
 import pokeImage from '@/assets/images/project-pokedex.png'
 import converterImage from '@/assets/images/project-converter.png'
 import webImage from '@/assets/images/project-first.png'
+import emailImage from '@/assets/images/project-email.png'
+import shippingImage from '@/assets/images/project-shipping.png'
+import carsImage from '@/assets/images/project-cars.png'
 
 const items = ref([
     {
@@ -23,6 +26,46 @@ const items = ref([
             skill: "javascript",
             percentage: "8.8%"
         },
+        ],
+        showMore: false
+    },
+    {
+        repository: 'https://github.com/heitorschleder/shipping-quote-app',
+        thumb: shippingImage,
+        projectTitle: 'Shipping Quote Calculator',
+        projectDesc: 'Here you can get a quote from one CEP code to another',
+        additionalInfo: [{
+            skill: "vue",
+            percentage: "71%"
+        },
+        {
+            skill: "typescript",
+            percentage: "25.3%"
+        },
+        {
+            skill: "javascript",
+            percentage: "1.6%"
+        }
+        ],
+        showMore: false
+    },
+{
+        repository: 'https://github.com/heitorschleder/ecommerce-cars-test',
+        thumb: carsImage,
+        projectTitle: 'Landing Page',
+        projectDesc: 'This is a test for a bigger project',
+        additionalInfo: [{
+            skill: "typescript",
+            percentage: "98.4%"
+        },
+        {
+            skill: "CSS",
+            percentage: "1.4%"
+        },
+        {
+            skill: "javascript",
+            percentage: "0.2%"
+        }
         ],
         showMore: false
     },
@@ -63,11 +106,23 @@ const items = ref([
             percentage: "9.8%"
         },
         ], showMore: false
-    },{
+    },
+    {
         repository: 'https://github.com/heitorschleder/portfolio',
         thumb: webImage,
         projectTitle: 'First Web Page',
         projectDesc: 'One of my first studies results with html (nostalgic)',
+        additionalInfo: [{
+            skill: "html",
+            percentage: "100%"
+        }
+        ], showMore: false
+    },
+    {
+        repository: 'https://github.com/heitorschleder/email-marketing',
+        thumb: emailImage,
+        projectTitle: 'Email Marketing Template',
+        projectDesc: 'Simple email marketing template, focuses on alignment and good practices in HTML.',
         additionalInfo: [{
             skill: "html",
             percentage: "100%"
